@@ -1,6 +1,6 @@
 # RouterOS 自动加白
 
-适用于 RouterOS 7.16+。结构参考 [routeros-dnspod-ddns](https://github.com/njzydark/routeros-dnspod-ddns)，接口逻辑参考 [po0fw](https://github.com/njzydark/po0fw)。
+适用于 RouterOS 7.16+。结构参考 [routeros-dnspod-ddns](https://github.com/njzydark/routeros-dnspod-ddns)，接口逻辑参考 [po0fw](https://github.com/reallinzc/po0fw)。
 
 RouterOS 直接 POST `https://<API_IPV4>/api/firewall/<token>/add`，body 为空，无需 Authorization 头。服务端以请求源公网 IPv4 为准，按 `/24` 网段加入白名单并回显结果；不需要查询第三方 IP 服务，也不需要手工计算网段。
 
