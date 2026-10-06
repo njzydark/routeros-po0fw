@@ -1,0 +1,10 @@
+services:
+  test:
+    build:
+      context: .
+      dockerfile: tests/Dockerfile
+    init: true
+    volumes:
+      - .:/repo:ro
+      - ./tests/artifacts:/artifacts
+      - ./tests/cache:/cache
